@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    margin: 50px;
+    padding: 20px;
+}
+
+.user-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.top-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.top-section h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.top-section .like-count {
+    font-size: 1.2em;
+    margin: 0 10px;
+}
+
+.top-section .like-button {
+    background-color: rgba(221, 221, 108, 0.877);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-card .content {
+    font-size: 1em;
+    margin-top: 20px;
+}
