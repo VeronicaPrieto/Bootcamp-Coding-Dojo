@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.navbar-links a {
+    color: #fff;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.signout-button {
+    padding: 5px 10px;
+    background-color: #0011ff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.main-container {
+    display: grid;
+    grid-template-areas:
+        "left-column right-column"
+        "education connections";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.left-column {
+    grid-area: left-column;
+}
+
+.right-column {
+    grid-area: right-column;
+    max-width: 300px;
+}
+
+.education {
+    grid-area: education;
+    max-width: 700px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.connections {
+    grid-area: connections;
+    max-width: 300px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card,
+.connection-requests,
+.connections {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    background-color: #7e7c7c;
+    padding: 10px;
+}
+
+.header-title img {
+    margin-right: 10px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile-picture,
+.request-picture,
+.connection-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.profile-info h2 {
+    margin: 0;
+}
+
+.profile-info p {
+    margin: 5px 0;
+}
+
+.profile-info p i {
+    margin-right: 5px;
+}
+
+.edit-profile {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.connection-requests .request,
+.connections .connection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.connections .connection {
+    justify-content: left;
+}
+
+.request-info,
+.connection-info {
+    display: flex;
+    align-items: left;
+}
+
+.request-actions,
+.connection-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.action-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.number-two {
+    width: 35px;
+    height: 35px;
+}
+
+.quinientos {
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+}
+
+.view-more {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #007bff;
+    padding: 10px 0;
+    border-top: 1px solid #e0e0e0;
+}
+
+.education-item {
+    padding: 20px;
+}
