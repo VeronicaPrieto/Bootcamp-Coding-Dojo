@@ -3,46 +3,60 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <title>Dojonary</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#" id="login-btn">Login</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">My Profile</a></li>
-                <li><a href="#">Find Connections</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <div class="profile-card">
-            <div class="profile-image">
-                <img src="images/profile.png" alt="Jane Doe">
+<body style="font-family: 'Poppins', sans-serif;">
+    <div class="container">
+        <div class="header">
+            <h1>Dojonary</h1>
+            <input type="text" id="searchBar" placeholder="Search" class="search-bar">
+            <button id="loginButton" class="login-button" onclick="toggleLogin()">Login</button>
+        </div>
+        <div class="content">
+            <div class="left-column">
+                <div class="entry" id="entry1">
+                    <div class="entry-left">
+                        <h2>ninja</h2>
+                        <p><em>noun</em></p>
+                        <p>Plural: ninjas</p>
+                        <button class="likes" data-entry="entry1">13 likes</button>
+                    </div>
+                    <div class="entry-right">
+                        <p>A practitioner skilled in the <span class="blue">Japanase</span> art of <span class="blue">ninjutsu</span></p>
+                    </div>
+                </div>
+                <div class="entry" id="entry2">
+                    <div class="entry-left">
+                        <h2>ninja</h2>
+                        <p><em>noun</em></p>
+                        <p>Plural: ninjas</p>
+                        <button class="likes" data-entry="entry2">37 likes</button>
+                    </div>
+                    <div class="entry-right">
+                        <p>A <span class="blue">programmer</span> who breaks down problems with <span class="blue">zen</span>-like focus</p>
+                    </div>
+                </div>
             </div>
-            <div class="profile-info">
-                <h2>Jane Doe</h2>
-                <p class="location">• Seattle</p>
-                <p class="description">Developer | Engineer | Problem Solver Master of shadows and the Internet!</p>
-                <button class="edit-profile">
-                    <i class="fas fa-cog"></i>
-                    edit profile
-                </button>
-                <button class="add-definition">
-                    Add Definition
-                </button>
-                <button class="likes">
-                    Likes
-                </button>
+            <div class="right-column">
+                <div class="definition">
+                    <h2>Dojonary is defined by YOU</h2>
+                    <button id="addDefinitionButton" class="button"
+                        onclick="hideAddDefinitionButton(); openPopup();">Add Definition</button>
+                    <div class="popup" id="addDefinitionPopup">
+                        <span class="close" onclick="closePopup()">&times;</span>
+                        <h3>Add Definition</h3>
+                        <p>Add the definition for the word here.</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </main>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
