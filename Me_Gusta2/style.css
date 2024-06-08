@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
+.feed-container {
+    display: flex;
+    margin: 20px;
+}
+
+.sidebar {
+    width: 200px;
+    margin-right: 20px;
+}
+
+.profile {
+    text-align: center;
+    border: 2px solid #000000;
+    margin-top: 67.5px;
+    padding: 48px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.feed {
+    flex-grow: 1;
+}
+
+.feed h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.post {
+    border: 2px solid #000000;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.post h3 {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.post .like-count {
+    font-size: 1em;
+    margin: 0 10px;
+}
+
+.post .like-button {
+    background-color: rgb(216, 216, 8);
+    border: 1px solid black;
+    color: rgba(255, 255, 255, 0.945);
+    padding: 8px 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 6px 6px 6px #000;
+}
+
+.post .content {
+    margin-top: 10px;
+    font-size: 1em;
+}
