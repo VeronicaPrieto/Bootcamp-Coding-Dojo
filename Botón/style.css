@@ -1,33 +1,48 @@
-.container{
-    font-family:  'Times New Roman', Times, serif;
+body{
+    background-color:white;
+    margin-top: 8%;
+    margin-left: 5%;
 }
+
 #box-1 button{
-    background-color: white;
-    border: 1px solid rgb(8,211,211);
+    font-family: 'Poppins', sans-serif;
+    background-color:white;
+    border: 2px solid rgb(8, 211, 150);
     border-radius: 220px;
-    color: rgb(8, 211, 211);
-    font-weight: bolder;
+    color: rgb(8, 202, 144);
+    font-weight: bold;
+    font-size: medium;
     padding: 5px 50px 5px 50px;
     height: fit-content;
     width: fit-content;
+    margin-top: 10px;
+    margin-left: 20px;
+
 }
+
 #box-2 button{
-    background-color: rgb(8, 211, 211);
-    border: 1px solid rgb(8, 211, 211);
+    background-color: rgb(8, 211, 150);
+    border: 1px solid rgb(8, 211, 150);
     color: white;
-    font-weight: bolder;
-    height:fit-content;
-    width:fit-content;
-    padding: 5px 8px 5px 8px;
-    border-radius:50%;
+    font-size: x-large;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
 }
+
 #box-3 button{
-    background-color:cornflowerblue;
+    font-family: 'Poppins', sans-serif;
+    background-color:rgb(42, 112, 241);
     color: white;
-    border: 1px solid rgb(0, 12, 116);
-    box-shadow: 2px 5px 5px black;
+    border: 2px solid rgb(1, 8, 66);
+    box-shadow: 3px 3px 1px black;
     height: max-content;
     width: max-content;
     padding: 5px 20px 5px 20px;
     font-weight: lighter;
+    margin-top: 20px;
+    margin-left: 20px;
 }
